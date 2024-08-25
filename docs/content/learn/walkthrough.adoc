@@ -384,7 +384,7 @@ That is all! Now lexy will automatically skip whitespace after every {{% token-r
 
 However, that can be a bit much.
 For example, it will now skip whitespace after each component of the version number, so something like `version = 0   .   0   . 0` is fine.
-There are to ways to prevent that.
+There are two ways to prevent that.
 The first is to use {{% docref "lexy::dsl::no_whitespace" %}} which parses a rule but disables whitespace skipping.
 This is used internally by {{% docref "lexy::dsl::identifier" %}} and {{% docref "lexy::dsl::delimited" %}}, so those cases are fine.
 The second is to have the `version` production inherit {{% docref "lexy::token_production" %}}.
