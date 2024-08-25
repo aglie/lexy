@@ -261,7 +261,7 @@ struct author
 <1> Allow anything that is not a control character.
 <2> We use `\` as the escape character using {{% docref "lexy::dsl::backslash_escape" %}},
     which is just an alias for {{% docref "lexy::dsl::escape" %}} using a backslah.
-<3> These two lines define `\uXXXX` and `\uXXXXXXXX` to specify character codes.
+<3> These two lines define `\uXXXX` and `\UXXXXXXXX` to specify character codes.
     {{% docref "lexy::dsl::code_point_id" %}} is a convenience alias for {{% docref "lexy::dsl::integer" %}}
     which parses a code point using `N` hex digits.
 <4> The `\u` and `\U` rules all produce a {{% docref "lexy::code_point" %}}.
